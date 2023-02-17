@@ -10,11 +10,12 @@ function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar }) {
         e.preventDefault();
         setSaveText("Сохранение...");
         onUpdateAvatar(avatarRef.current.value);
+
     }
     useEffect(() => {
         avatarRef.current.value = '';
         setSaveText("Сохранить");
-      }, []);
+      }, [isOpen]);
 
     return (
         <PopupWithForm

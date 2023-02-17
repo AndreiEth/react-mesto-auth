@@ -1,4 +1,4 @@
-import connect_auth from './connect_auth';
+import connectAuth from './connectAuth';
 
 class Auth {
     constructor(connect) {
@@ -47,6 +47,6 @@ class Auth {
       }
 }
 
-const auth = new Auth(connect_auth);
+const auth = new Auth(connectAuth);
 
 export default auth;
